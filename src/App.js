@@ -52,7 +52,7 @@ const analytics = analyticsLib({
     visualize,
     cancelAction,
     googleAnalytics({
-      trackingId: 'UA-121991291',
+      trackingId: 'UA-126647663-1',// UA-121991291
       autoTrack: true,
     }),
     vanillaIntegration({
