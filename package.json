@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "analytics": "0.0.5",
+    "analytics-plugin-customerio": "0.0.1",
     "analytics-plugin-ga": "0.0.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",

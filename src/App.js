@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import analyticsLib from 'analytics'
 import vanillaIntegration from './vanilla-integration'
 import googleAnalytics from 'analytics-plugin-ga'
+import customerIO from 'analytics-plugin-customerio'
 import './App.css'
 
 const visualize = store => next => action => {
@@ -54,6 +55,9 @@ const analytics = analyticsLib({
     googleAnalytics({
       trackingId: 'UA-126647663-1',// UA-121991291
       autoTrack: true,
+    }),
+    customerIO({
+      siteId: '4dfdba9c7f1a6d60f779'
     }),
     vanillaIntegration({
       trackingId: 'lololo',
