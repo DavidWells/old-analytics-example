@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import analyticsLib from 'analytics'
 import vanillaIntegration from './vanilla-integration'
+import googleAnalytics from 'analytics-plugin-ga'
 import './App.css'
 
 const visualize = store => next => action => {
@@ -50,6 +51,10 @@ const analytics = analyticsLib({
     logger,
     visualize,
     cancelAction,
+    googleAnalytics({
+      trackingId: 'UA-121991291',
+      autoTrack: true,
+    }),
     vanillaIntegration({
       trackingId: 'lololo',
     }),
