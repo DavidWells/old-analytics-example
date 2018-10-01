@@ -65,8 +65,10 @@ const analytics = analyticsLib({
   ]
 })
 
-
 console.log('analytics', analytics)
+
+// Interact with analytics on window
+window.analytics = analytics
 
 class App extends Component {
   componentDidMount() {
